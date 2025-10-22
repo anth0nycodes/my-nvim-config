@@ -4,8 +4,6 @@ A clean and minimal setup powered by [LazyVim](https://github.com/LazyVim/LazyVi
 
 This is my personal Neovim configuration — shared here for anyone curious or looking for a good starting point. You can refer to the official [LazyVim documentation](https://lazyvim.github.io/installation) to get started.
 
----
-
 ## 📸 Preview
 
 <img width="1920" height="1080" alt="LazyVim Preview" src="https://github.com/user-attachments/assets/d040c64e-afd5-40c9-80ac-a65d16984fe5" />
