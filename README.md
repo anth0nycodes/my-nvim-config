@@ -36,7 +36,7 @@ window-padding-y = 0
 window-padding-balance = false
 background-blur = true
 background-image-opacity = 0.1
-background-image = /Users/hoang/Pictures/tonikawa.png
+background-image = /Path/To/Your/Image/test.png
 background-image-fit = cover
 background = 000000
 ```
