@@ -34,12 +34,13 @@ fullscreen = true
 window-padding-x = 0
 window-padding-y = 0
 window-padding-balance = false
-background-blur = true
-background-image-opacity = 0.1
+background-image-opacity = 0.15
 background-image = /Path/To/Your/Image/test.png
 background-image-fit = cover
 background = 000000
 ```
+
+> Note: For the background image, it **must** be in a png or jpg format.
 
 ## 🧰 Miscellaneous Resources
 - [Nerd Fonts](https://www.nerdfonts.com/font-downloads)
