@@ -12,7 +12,7 @@ This is my personal Neovim configuration — shared here for anyone curious or l
 
 If you want to try this setup yourself:
 ```zsh
-git clone https://github.com/anth0nycodes/my-lazyvim-nvim-config ~/.config/nvim
+git clone https://github.com/anth0nycodes/my-nvim-config.git ~/.config/nvim
 ```
 Then launch Neovim with:
 ```zsh
