@@ -14,3 +14,7 @@ vim.keymap.set(
   "<leader>sg",
   "<cmd>lua require('telescope.builtin').live_grep({additional_args = {'--hidden'}})<cr>"
 )
+
+-- Markdown Preview keymaps
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreview<cr>", { desc = "Markdown Preview" })
+vim.keymap.set("n", "<leader>mc", "<cmd>MarkdownPreviewStop<cr>", { desc = "Markdown Preview Close" })
