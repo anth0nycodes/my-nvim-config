@@ -12,6 +12,10 @@ vim.keymap.set(
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move down half a page and center cursor" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move up half a page and center cursor" })
 
+-- Remap forward and backwards search to also center with zz
+vim.keymap.set("n", "n", "nzzzv", { desc = "Go to the next search term and open fold" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Go to the previous search term and open fold" })
+
 -- Markdown Preview keymaps
 vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreview<cr>", { desc = "Markdown Preview" })
 vim.keymap.set("n", "<leader>mc", "<cmd>MarkdownPreviewStop<cr>", { desc = "Markdown Preview Close" })
