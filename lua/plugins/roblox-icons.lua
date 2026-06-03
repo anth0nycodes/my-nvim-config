@@ -4,6 +4,8 @@ return {
     -- Custom magenta highlight for ModuleScript icons
     vim.api.nvim_set_hl(0, "RobloxModuleScript", { fg = "#A367FB" })
     vim.api.nvim_set_hl(0, "RobloxLocalScript", { fg = "#2BB1FF" })
+    vim.api.nvim_set_hl(0, "RobloxFolder", { fg = "#FADC7F" })
+    vim.api.nvim_set_hl(0, "RobloxToolWarm", { fg = "#F2C67F" })
 
     -- ModuleScript icon for general .luau files
     opts.extension = vim.tbl_deep_extend("force", opts.extension or {}, {
@@ -15,9 +17,12 @@ return {
       luau = { glyph = "󰢱", hl = "RobloxModuleScript" },
     })
 
-    -- Rojo project file
+    -- Roblox tool config files
     opts.file = vim.tbl_deep_extend("force", opts.file or {}, {
-      ["default.project.json"] = { glyph = "󰣏", hl = "MiniIconsRed" },
+      ["wally.toml"] = { glyph = "󰩃", hl = "RobloxToolWarm" },
+      ["wally.lock"] = { glyph = "󰩃", hl = "RobloxToolWarm" },
+      ["selene.toml"] = { glyph = "󰒓", hl = "MiniIconsGrey" },
+      ["rokit.toml"] = { glyph = "󰏗", hl = "RobloxToolWarm" },
     })
 
     -- Patch MiniIcons.get after setup to handle Rojo suffix patterns
@@ -42,6 +47,9 @@ return {
         end
         if category == "filetype" and name == "luau" then
           return "󰢱", "RobloxModuleScript", false
+        end
+        if category == "directory" then
+          return "󰉋", "RobloxFolder", false
         end
         return _get(category, name)
       end
