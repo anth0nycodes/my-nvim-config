@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.icons",
+  "nvim-mini/mini.icons",
   opts = function(_, opts)
     -- Custom magenta highlight for ModuleScript icons
     vim.api.nvim_set_hl(0, "RobloxModuleScript", { fg = "#A367FB" })
